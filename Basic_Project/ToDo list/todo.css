@@ -1,0 +1,106 @@
+*{
+    text-align: center;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+    width:100%;
+    height:100vh;
+  
+}
+ h1{
+   color:brown;
+   background-color: rgb(107, 156, 127);  
+}
+ .input-container{
+    display: flex;
+    justify-content:center;
+    align-items: center ;
+    margin:20px; 
+}
+.input-container #inputField {
+    padding: 5px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size:15px;
+    text-align: left;
+}
+.input-container #dateField {
+    padding: 5px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size:15px;
+    text-align: left;
+}
+.input-container button{
+    padding: 10px;
+    background-color: rgb(36, 255, 65);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-weight: 500;
+    font-size:15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-container button:hover{
+    background-color: rgb(21, 231, 60);
+}
+input:focus{
+    color:rgb(1, 5, 5);
+    border: 1px black solid;
+}
+#dateField:hover{
+    touch-action: auto;
+}
+
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position:relative;
+    cursor:pointer;
+
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height:25px;
+    width:25px;
+    border-radius: 50px;
+    background-color: rgb(243, 240, 240);
+    left:40%;
+    top:50%;
+    transform: translateY(-50%);
+    margin-right :auto;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+}
+.checked::before{
+    background-color: rgb(0, 0, 0);
+}
+ul li span{
+    font-size:20px;
+    width: 40px;
+    height:40px;
+    color:#060505;
+    line-height: 20px;
+    text-align: center;
+    background-color: red;
+    border-radius: 10px;;
+    margin-left:40px;
+}
+ul li span:hover{
+    color: white;
+}
+
+
+
